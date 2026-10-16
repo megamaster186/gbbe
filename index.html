@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101d45" />
+  <title>A Little Place for you ♡</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sticker-layer" aria-hidden="true">
+    <img class="bg-sticker sticker-1" src="assets/stickers/sticker-1.jpg" alt="" />
+    <img class="bg-sticker sticker-2" src="assets/stickers/sticker-2.png" alt="" />
+    <img class="bg-sticker sticker-3" src="assets/stickers/sticker-3.jpg" alt="" />
+    <img class="bg-sticker sticker-4" src="assets/stickers/sticker-4.jpg" alt="" />
+    <img class="bg-sticker sticker-5" src="assets/stickers/sticker-5.jpg" alt="" />
+    <img class="bg-sticker sticker-6" src="assets/stickers/sticker-6.jpg" alt="" />
+  </div>
+  <div class="sparkle-layer" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to home">♡</a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#soundtrack">Soundtrack</a>
+      <a href="#little-things">Little things</a>
+      <a href="#question">Question</a>
+      <a href="#letter">Letter</a>
+    </nav>
+    <a class="music-toggle" href="#soundtrack"><span>♫</span> <span>Soundtrack</span></a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-decor decor-one">✿</div>
+      <div class="hero-decor decor-two">♡</div>
+      <p class="eyebrow">a tiny corner of the internet</p>
+      <h1>Hey, <span id="herName">Stalker</span> <span class="blue-heart">♡</span></h1>
+      <p class="hero-copy">I made you a little something.<br />No big reason. Just because. </p>
+      <a class="primary-button" href="#gallery">Take a look <span>↓</span></a>
+      <p class="tiny-note">a little corner of the internet, just because</p>
+      <div class="scroll-cue" aria-hidden="true">✧</div>
+    </section>
+
+    <section class="section soundtrack-section" id="soundtrack">
+      <div class="section-heading">
+        <p class="eyebrow">songs that remind me of you</p>
+        <h2>A tiny <em>soundtrack.</em></h2>
+        <p class="muted">Five songs, one little playlist. Pick a song and press play right here. ♡</p>
+      </div>
+      <div class="playlist-card playable-playlist">
+        <div class="playlist-topline"><span class="vinyl-disc" aria-hidden="true">♫</span><div><p class="playlist-kicker">THE LITTLE PLACE MIX</p><p class="playlist-subtitle">a little dreamy, a little chaotic</p></div></div>
+        <p class="muted player-intro" id="nowPlaying">Choose a song below. Your playlist is ready. ♡</p>
+        <div class="embedded-player-wrap local-audio-wrap">
+          <audio id="localMusicPlayer" controls preload="metadata" src="assets/audio/01-flaming-hot-cheetos.mp3">Your browser does not support audio playback.</audio>
+        </div>
+        <ol class="track-list playable-track-list">
+          <li><span class="track-number">01</span><span class="track-info"><strong>Flaming Hot Cheetos</strong><small>Clairo</small></span><button class="track-link track-select" type="button" data-audio="assets/audio/01-flaming-hot-cheetos.mp3" data-title="Flaming Hot Cheetos — Clairo" aria-pressed="true" aria-label="Play Flaming Hot Cheetos by Clairo">♫</button></li>
+          <li><span class="track-number">02</span><span class="track-info"><strong>Glue Song</strong><small>beabadoobee</small></span><button class="track-link track-select" type="button" data-audio="assets/audio/02-glue-song.mp3" data-title="Glue Song — beabadoobee" aria-pressed="false" aria-label="Play Glue Song by beabadoobee">▶</button></li>
+          <li><span class="track-number">03</span><span class="track-info"><strong>Always</strong><small>Daniel Caesar</small></span><button class="track-link track-select" type="button" data-audio="assets/audio/03-always.mp3" data-title="Always — Daniel Caesar" aria-pressed="false" aria-label="Play Always by Daniel Caesar">▶</button></li>
+          <li><span class="track-number">04</span><span class="track-info"><strong>Call It Fate, Call It Karma</strong><small>The Strokes</small></span><button class="track-link track-select" type="button" data-audio="assets/audio/04-call-it-fate-call-it-karma.mp3" data-title="Call It Fate, Call It Karma — The Strokes" aria-pressed="false" aria-label="Play Call It Fate, Call It Karma by The Strokes">▶</button></li>
+          <li><span class="track-number">05</span><span class="track-info"><strong>You're So Vain</strong><small>Carly Simon</small></span><button class="track-link track-select" type="button" data-audio="assets/audio/05-youre-so-vain.mp3" data-title="You're So Vain — Carly Simon" aria-pressed="false" aria-label="Play You're So Vain by Carly Simon">▶</button></li>
+        </ol>
+        <p class="playlist-footnote">Audio is stored in this website folder, so the songs don't depend on YouTube or Spotify. Press play to start; the next song plays automatically when one ends. ♡</p>
+      </div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="section-heading">
+        <p class="eyebrow">a small reminder</p>
+        <h2>your not cooler than me </h2>
+        <p class="muted">This page is a tiny collection of things I wanted to share with you.</p>
+      </div>
+      <div class="note-card">
+        <span class="note-icon">☁️</span>
+        <p>Consider this your reminder to drink some water, take a deep breath, and be a little nicer to yourself today.</p>
+        <span class="note-signature">— your friendly internet non catboy ♡</span>
+      </div>
+    </section>
+
+    
+      
+    <section class="section little-things-section" id="little-things">
+      <div class="section-heading">
+        <p class="eyebrow">in case you forgot</p>
+        <h2>A few little <em>things.</em></h2>
+      </div>
+      <div class="message-grid">
+        <article class="message-card">
+          <span>🌼</span><h3>You're kinda gay.</h3>
+          <p>your kinda gay.</p>
+        </article>
+        <article class="message-card">
+          <span>🫧</span><h3>Your good at MATHS.</h3>
+          <p>That means your hella smart.</p>
+        </article>
+        <article class="message-card">
+          <span>🌙</span><h3>Banger taste.</h3>
+          <p>Not as cool as mine but its a start.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section question-section" id="question">
+      <div class="question-card">
+        <p class="eyebrow">important research</p>
+        <h2>Quick question…</h2>
+        <p class="question-text">If you could teleport anywhere for one day, where would you go?</p>
+        <div class="answer-options" id="answerOptions">
+          <button class="answer-button" data-answer="Beach day 🌊">A quiet beach 🌊</button>
+          <button class="answer-button" data-answer="Cosy cabin 🌲">A cosy cabin 🌲</button>
+          <button class="answer-button" data-answer="A city adventure 🏙️">A new city 🏙️</button>
+          <button class="answer-button" data-answer="Somewhere unexpected ✨">Surprise me ✨</button>
+        </div>
+        <p class="answer-result" id="answerResult" aria-live="polite">Choose one — there are no wrong answers.</p>
+      </div>
+    </section>
+
+    <section class="section surprise-section">
+      <div class="surprise-box">
+        <div class="surprise-sparkle">✧</div>
+        <p class="eyebrow">you found this</p>
+        <h2>A tiny hidden surprise</h2>
+        <p>There is a compliment hiding in this button. Obviously, very serious business.</p>
+        <button class="primary-button" id="surpriseButton" type="button">Reveal it ♡</button>
+        <p class="surprise-result" id="surpriseResult" hidden>You make my world feel a little less ordinary. Don't let that go to your head. (Okay, maybe a little.) </p>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="letter-envelope">
+        <span class="letter-stamp">♡</span>
+        <p class="eyebrow">one last little thing</p>
+        <h2>A note for <em>you.</em></h2>
+        <p class="letter-preview">Nothing dramatic. Just a few words I wanted you to have.</p>
+        <button class="primary-button" id="letterButton" type="button">Open the note ✉</button>
+        <div class="letter-content" id="letterContent" hidden>
+          <p>Hey Sanabee,</p>
+          <p>Your gonna get another today with more dept but for now.</p>
+          <p>Thanks for being yourself, for turning me into a catboy,for wathing how to lose a guy in 10 days,
+              for allowing me to complain about all of my dumb problems,for not judging me and even if you were doing it silently.</p>
+          <p>im very glad i got the balls to text you cause i have not regretted a single thing since then
+            so anyways your turning 16 tht means you have to pay taxes btw. I hope you have a wonderful year ahead filled with happiness .</p>
+          <p class="letter-signoff">Take care, of your minecraft pig</p>
+          <p class="letter-from">— [Arul]</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>made with ♡ and a suspicious amount of tabs open</p>
+    <a href="#home">back to the top ↑</a>
+  </footer>
+
+  <div class="modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Photo message" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close" type="button">×</button>
+      <span class="modal-emoji" id="modalEmoji">♡</span>
+      <p id="modalCaption">A little moment.</p>
+      <button class="text-button" id="modalOkay" type="button">cute, okay ♡</button>
+    </div>
+  </div>
+
+</body>
+</html>
